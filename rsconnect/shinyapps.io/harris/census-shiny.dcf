@@ -1,0 +1,11 @@
+name: census-shiny
+title: census-shiny
+account: harris
+server: shinyapps.io
+appId: 137355
+bundleId: 613642
+url: https://harris.shinyapps.io/census-shiny/
+when: 1479090657.10966
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: analysis.Rmd|CB1200A11.dat|CB1300A11.dat|CB1400A11.dat|CB1400A11.zip|raw_CB_data.rds
