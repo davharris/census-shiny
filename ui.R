@@ -17,20 +17,24 @@ shinyUI(fluidPage(
   # Application title
   titlePanel("US County Business Patterns"),
 
+  "David J. Harris, using US Census data",
+  
   # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
       selectInput("sector",
-                  "Number of bins:",
+                  "Economic sector:",
                   choices = sectors),
       selectInput("year",
                   "year:",
-                  choices = 2012:2014)
+                  choices = 2012:2014),
+      radioButtons("map", "Visualization type:", c(map = TRUE, population = FALSE))
     ),
     
     # Show a plot of the generated distribution
     mainPanel(
-      plotOutput("map")
+      plotOutput("plot"),
+      textOutput("text")
     )
   )
 ))
